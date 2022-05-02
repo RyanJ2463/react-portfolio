@@ -125,4 +125,43 @@ body {
 
 .contact {
   height: 100vh;
+  padding-top: 130px;
+}
+
+.field {
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  margin: auto;
+
+}
+
+.field-text {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.field-button {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.recap {
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
+}
+
+.comment-text {
+  height: 120px;
+  width: 40%;
+  margin: auto;
+}
+
+.email-text {
+  height: 60px;
+  width: 20%;
+  margin: auto;
 }
