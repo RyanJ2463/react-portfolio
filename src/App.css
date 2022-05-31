@@ -15,7 +15,6 @@ body {
   font-size: 100px;
   margin: .5rem auto;
   text-align: center;
-  padding-left: 30px;
   margin-top: 280px;
 }
 
@@ -25,7 +24,6 @@ body {
   font-size: 30px;
   margin: .5rem auto;
   text-align: center;
-  padding-left: 30px;
 }
 
 .github {
@@ -34,12 +32,10 @@ body {
 
 .linkedin {
   height: 80px;
-  padding-left: 50px;
 }
 
 .mail {
   height: 80px;
-  padding-left: 50px;
 }
 
 .icons {
@@ -61,7 +57,6 @@ body {
   font-size: 100px;
   margin: .5rem auto;
   text-align: center;
-  padding-left: 30px;
   margin-top: 80px;
 }
 
@@ -72,7 +67,6 @@ body {
   margin: .5rem auto;
   text-align: center;
   width: 50%;
-  padding-left: 30px;
 }
 
 .about-icons {
@@ -106,9 +100,6 @@ body {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  padding-left: 300px;
-  padding-right: 300px;
-  
 }
 
 .project-title {
@@ -165,3 +156,78 @@ body {
   width: 20%;
   margin: auto;
 }
+
+@media only screen and (max-width: 1200px) {
+  .contact {
+    height: 50vh;
+    margin-top: 400px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    height: 100vh;
+    position: relative;
+    top: 800px;
+  }
+  .about-icons-stack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+@media only screen and (max-width: 700px) {
+  .about-icons-stack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+@media only screen and (max-width: 565px) {
+  .my-paragraph {
+    width: 80%;
+  }
+  .project-title {
+    position: relative;
+    top: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 405px) {
+  .project-title {
+    position: relative;
+    top: 150px;
+  }
+  .contact {
+    height: 75vh;
+    position: relative;
+    top: 1000px;
+  }
+  .email-text {
+    width: 50%;
+  }
+  .comment-text {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .project-title {
+    position: relative;
+    top: 150px;
+  }
+  .contact {
+    height: 105vh;
+    position: relative;
+    top: 1200px;
+  }
+  .email-text {
+    width: 50%;
+  }
+  .comment-text {
+    width: 80%;
+  }
+}
+

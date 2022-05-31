@@ -7,13 +7,19 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import treasurehunt from '../assests/treasurehunt.gif'
 import space from '../assests/space.png'
+import star from '../assests/star.png'
+import cattinder from '../assests/cattinder.jpeg'
+import { Grid } from '@mui/material';
+
 
 const Projects = () => {
   return (
     <div className='projects'>
         <h1 className='project-title'>My Projects</h1>
         <div className='carousel'>
-        <Card sx={{ maxWidth: 345, borderRadius: 5 }} className='project-card'>
+        <Grid container>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card sx={{ minWidth: 245, maxHeight: 500, borderRadius: 5, mx: 5 }} className='project-card'>
             <CardMedia
                 component="img"
                 alt="treasurehunt"
@@ -25,8 +31,7 @@ const Projects = () => {
                 Treasure Hunt
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                A basic web application built during Jumpstart which is a 3-day course that goes over the basics and fundamentals of development. The application contains a small treasure hunt board game, 4x4 table that is created using HTML and functionality using JavaScript.
                 </Typography>
             </CardContent>
             <CardActions>
@@ -38,7 +43,58 @@ const Projects = () => {
                 </a>
             </CardActions>
         </Card>
-        <Card sx={{ maxWidth: 345, borderRadius: 5 }}>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card sx={{  minWidth: 245, maxHeight: 500, borderRadius: 5, mx: 5 }} className='project-card'>
+            <CardMedia
+                component="img"
+                alt="star"
+                height="250"
+                image={star}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                Star Tunes 
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                Star Tunes is a React in Rails full stack application that I was apart of during a 2-week capstone project while at LEARN Academy. It's essentially a random song generator that show cases basic CRUD functionality.
+                </Typography>
+            </CardContent>
+            <CardActions>
+                <a href='https://github.com/RyanJ2463/StarTunes' target='_blank' rel="noreferrer">
+                    <Button size="small">Source code</Button>
+                </a>
+                <a href='http://startunes.herokuapp.com/' target='_blank' rel="noreferrer">
+                    <Button size="small">Live</Button>
+                </a>
+            </CardActions>
+        </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card sx={{ minWidth: 245, maxHeight: 500,  borderRadius: 5, mx: 5 }} className='project-card'>
+            <CardMedia
+                component="img"
+                alt="cattinder"
+                height="250"
+                image={cattinder}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                Cat Tinder
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                Cat Tinder is an full stack application built using React for the front end and Rails for the back end. This project is to display basic CRUD functionality with the utilization of an API fetching data from the local host and being able to see it on the front end.
+                </Typography>
+            </CardContent>
+            <CardActions>
+                <a href='https://github.com/RyanJ2463/cat-tinder-frontend-birman-ryan-nate' target='_blank' rel="noreferrer">
+                    <Button size="small">Source code</Button>
+                </a>
+            </CardActions>
+        </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card sx={{  minWidth: 245, maxHeight: 500, borderRadius: 5, mx: 5 }}>
             <CardMedia
                 component="img"
                 alt="NASA API"
@@ -50,8 +106,7 @@ const Projects = () => {
                 Astronomy Picture of the Day
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                A web application that shows a new Astronomy picture everyday by utilizing NASA's external API
                 </Typography>
             </CardContent>
             <CardActions>
@@ -60,6 +115,8 @@ const Projects = () => {
             </a>
             </CardActions>
         </Card>
+        </Grid>
+        </Grid>
         </div>
     );
 
