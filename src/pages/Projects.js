@@ -31,7 +31,7 @@ const Projects = () => {
                 Treasure Hunt
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                A basic web application built during Jumpstart which is a 3-day course that goes over the basics and fundamentals of development. The application contains a small treasure hunt board game, 4x4 table that is created using HTML and functionality using JavaScript.
+                A basic web application built during a 3-day course that goes over the basics and fundamentals of development. The application contains a small treasure hunt board game, 4x4 table that is created using HTML and functionality using JavaScript.
                 </Typography>
             </CardContent>
             <CardActions>
@@ -57,7 +57,7 @@ const Projects = () => {
                 Star Tunes 
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Star Tunes is a React in Rails full stack application that I was apart of during a 2-week capstone project while at LEARN Academy. It's essentially a random song generator that show cases basic CRUD functionality.
+                Star Tunes is a React in Rails full stack application. It's a random song generator that show cases basic CRUD functionality.
                 </Typography>
             </CardContent>
             <CardActions>
@@ -83,7 +83,7 @@ const Projects = () => {
                 Cat Tinder
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                Cat Tinder is an full stack application built using React for the front end and Rails for the back end. This project is to display basic CRUD functionality with the utilization of an API fetching data from the local host and being able to see it on the front end.
+                Cat Tinder is an full stack application built using React in rails. This project is to display basic CRUD functionality with the utilization of an API fetching data from the local host and being able to see it on the front end.
                 </Typography>
             </CardContent>
             <CardActions>
